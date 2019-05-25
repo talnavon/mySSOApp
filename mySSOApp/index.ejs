@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SAML App</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% if (!username) { %>
+    <h2>Not logged in...</h2>
+    <h3>Please <a class='btn btn-link' href='/login'>Login</a></h3>
+    <% } else { %>
+    <h2>Hello, <%= username %> !!!</h2>
+    (your e-mail is <%=mail %>)
+    <% } %>
+  </body>
+</html>
